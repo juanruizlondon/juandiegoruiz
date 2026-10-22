@@ -138,6 +138,7 @@ window.PROJECTS = [
     ],
     gallery: [
       { file: "logo.jpg", caption: { en: "Logo", de: "Logo" } },
+      { video: "logo_video.mp4", caption: { en: "Logo on video", de: "Logo auf Video" } },
       { file: "mascot.jpg", caption: { en: "Mascot", de: "Maskottchen" } },
       { file: "posters.jpg", caption: { en: "Posters", de: "Plakate" } },
       { file: "brandbook-01.jpg", caption: { en: "Brand book", de: "Brand Book" } },
