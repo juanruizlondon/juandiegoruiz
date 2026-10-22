@@ -142,10 +142,11 @@ window.PROJECTS = [
       { file: "mascot.jpg", caption: { en: "Mascot", de: "Maskottchen" } },
       { video: "mascot_video.mp4", caption: { en: "3D rendered animation of Pulpi's Geode mascot (2019)", de: "3D-gerenderte Animation des Maskottchens von Pulpi’s Geode (2019)" } },
       { video: "mascot_ad_video.mp4", caption: { en: "TV/Internet Ad for Pulpi's Geode (2019)", de: "TV-/Internetwerbung für Pulpi’s Geode (2019)" } },
-      { file: "posters.jpg", caption: { en: "Posters", de: "Plakate" } },
-      { file: "brandbook-01.jpg", caption: { en: "Brand book", de: "Brand Book" } },
-      { file: "brandbook-02.jpg", caption: { en: "Brand book", de: "Brand Book" } },
-      { file: "merch.jpg", caption: { en: "Merchandise", de: "Merchandising" } }
+      { file: "posters1.jpg", caption: { en: "Leaflet", de: "Flyer" } },
+      { file: "posters2.jpg", caption: { en: "The same leaflets", de: "Dieselben Flyer" } },
+      { file: "brandbook1.jpg", caption: { en: "Brand book", de: "Brand Book" } },
+      { file: "brandbook2.jpg", caption: { en: "more from the Brand book", de: "mehr con das Brand Book" } },
+      { file: "merchandising.jpg", caption: { en: "Merchandise", de: "Merchandising" } }
     ],
     video: null,
     note: {
