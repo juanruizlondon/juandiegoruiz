@@ -127,13 +127,16 @@
 
     // Galería: cada elemento puede ser una imagen ({ file: ... }) o un vídeo ({ video: ... }).
     // Opciones: wide: true (ocupa todo el ancho), poster: "imagen.jpg" (vídeo),
-    // loop: true (vídeo en bucle, silenciado y sin controles, tipo GIF).
+    // Los vídeos se reproducen solos, en bucle y silenciados (con controles para activar el sonido).
+    // loop: true oculta los controles (tipo GIF). autoplay: false desactiva la reproducción automática.
     var gallery = (p.gallery || []).map(function (g, n) {
       var wide = g.wide === true || (g.wide !== false && n === 0);
       var media;
       if (g.video) {
-        media = '<figure class="media"><video style="display:block;width:100%;height:auto" playsinline preload="metadata"' +
-          (g.loop ? " autoplay muted loop" : " controls") +
+        media = '<figure class="media media-video" style="aspect-ratio:auto;height:auto;min-height:0;padding:0;background:transparent">' +
+          '<video style="position:static;display:block;width:100%;height:auto" playsinline preload="metadata"' +
+          (g.autoplay === false ? "" : " autoplay muted loop") +
+          (g.loop ? "" : " controls") +
           ' src="' + esc(base + g.video) + '"' +
           (g.poster ? ' poster="' + esc(base + g.poster) + '"' : "") +
           "></video></figure>";
