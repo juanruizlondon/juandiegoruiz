@@ -125,9 +125,24 @@
       return '<section class="cs-text"><h2>' + esc(L(s.heading)) + "</h2><p>" + esc(L(s.text)) + "</p></section>";
     }).join("");
 
+    // Galería: cada elemento puede ser una imagen ({ file: ... }) o un vídeo ({ video: ... }).
+    // Opciones: wide: true (ocupa todo el ancho), poster: "imagen.jpg" (vídeo),
+    // loop: true (vídeo en bucle, silenciado y sin controles, tipo GIF).
     var gallery = (p.gallery || []).map(function (g, n) {
-      return '<div class="g-item' + (n === 0 ? " g-wide" : "") + '">' + img(base + g.file, L(g.caption)) +
-        "<p class=\"caption\">" + esc(L(g.caption)) + "</p></div>";
+      var wide = g.wide === true || (g.wide !== false && n === 0);
+      var media;
+      if (g.video) {
+        media = '<figure class="media"><video style="display:block;width:100%;height:auto" playsinline preload="metadata"' +
+          (g.loop ? " autoplay muted loop" : " controls") +
+          ' src="' + esc(base + g.video) + '"' +
+          (g.poster ? ' poster="' + esc(base + g.poster) + '"' : "") +
+          "></video></figure>";
+      } else {
+        media = img(base + g.file, L(g.caption));
+      }
+      var cap = L(g.caption);
+      return '<div class="g-item' + (wide ? " g-wide" : "") + '">' + media +
+        (cap ? "<p class=\"caption\">" + esc(cap) + "</p>" : "") + "</div>";
     }).join("");
 
     var video = p.video && p.video.src
