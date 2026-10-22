@@ -145,7 +145,7 @@ window.PROJECTS = [
       { file: "posters1.jpg", caption: { en: "Leaflet", de: "Flyer" } },
       { file: "posters2.jpg", caption: { en: "The same leaflets", de: "Dieselben Flyer" } },
       { file: "brandbook1.jpg", caption: { en: "Brand book", de: "Brand Book" } },
-      { file: "brandbook2.jpg", caption: { en: "more from the Brand book", de: "Mehr con das Brand Book" } },
+      { file: "brandbook2.jpg", caption: { en: "More from the Brand book", de: "Mehr von dem Brand Book" } },
       { file: "merchandising.jpg", caption: { en: "Merchandise", de: "Merchandising" } }
     ],
     video: null,
