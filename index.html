@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juan Diego Ruiz | Graphic Designer & Art Director</title>
+<meta name="description" content="Portfolio of Juan Diego Ruiz, graphic designer and art director in Berlin. Brand identity, campaigns, UX/UI and motion.">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/img/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home">
+<a class="skip" href="#work">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <nav aria-label="Main">
+      <a href="#work" data-i18n="nav_work">Work</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <button class="lang-switch" type="button">Deutsch</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <h1 class="hero-name"><span>Juan Diego</span> <span>Ruiz</span></h1>
+    <p class="hero-role" data-i18n="hero_role">Graphic designer and art director in Berlin</p>
+  </div>
+  <div class="wrap hero-foot">
+    <p class="hero-text" data-i18n="hero_text"></p>
+  </div>
+</section>
+
+<main>
+  <section id="work" class="wrap section">
+    <h2 class="section-title" data-i18n="work_title">Selected work</h2>
+    <ul id="work-list" class="work-list"></ul>
+  </section>
+
+  <section id="about" class="wrap section ruled">
+    <h2 class="section-title" data-i18n="about_title">About</h2>
+    <div class="about-grid">
+      <div id="about-text" class="about-text"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="contact">
+  <div class="wrap">
+    <h2 class="contact-title" data-i18n="contact_title"></h2>
+    <p class="contact-note" data-i18n="contact_intro"></p>
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="field">
+        <label for="f-name" data-i18n="f_name">Name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-email" data-i18n="f_email">Email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="f-company" data-i18n="f_company">Company</label>
+        <input id="f-company" name="company" type="text" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="f-reason" data-i18n="f_reason">Reason</label>
+        <select id="f-reason" name="reason" required>
+          <option value="freelance" data-i18n="r_freelance">Freelance project</option>
+          <option value="job" data-i18n="r_job">Job opportunity</option>
+          <option value="cv" data-i18n="r_cv">CV request</option>
+          <option value="other" data-i18n="r_other">Something else</option>
+        </select>
+      </div>
+      <div class="field field-wide">
+        <label for="f-message" data-i18n="f_message">Message</label>
+        <textarea id="f-message" name="message" rows="5" required></textarea>
+      </div>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="field-wide form-actions">
+        <button class="btn" type="submit" data-i18n="f_send">Send message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+    <p class="copyright">© <span id="year"></span> Juan Diego Ruiz</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
