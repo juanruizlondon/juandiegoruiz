@@ -55,9 +55,21 @@
       '<span class="media-missing"><strong>' + esc(t("image_pending")) + "</strong>" + esc(src) + "</span>" +
       "</figure>";
   }
+  // Si una imagen no existe con la extensión indicada, prueba las demás
+  // (logo.jpg → logo.jpeg → logo.png → logo.webp…) antes de mostrar el hueco.
+  var EXTS = [".jpg", ".jpeg", ".png", ".webp", ".JPG", ".JPEG", ".PNG", ".WEBP"];
   function watchImages(root) {
     root.querySelectorAll(".media img").forEach(function (im) {
-      function fail() { im.closest(".media").classList.add("is-missing"); }
+      var src = im.getAttribute("src");
+      var m = src.match(/^(.*)(\.(?:jpe?g|png|webp))$/i);
+      var tried = m ? [m[2]] : [];
+      function fail() {
+        if (m) {
+          var next = EXTS.filter(function (e) { return tried.indexOf(e) < 0; })[0];
+          if (next) { tried.push(next); im.src = m[1] + next; return; }
+        }
+        im.closest(".media").classList.add("is-missing");
+      }
       if (im.complete && im.naturalWidth === 0) fail();
       im.addEventListener("error", fail);
     });
@@ -302,7 +314,9 @@
           return !x.querySelector(".is-missing");
         });
         lbItems = els.map(function (x) {
-          return { type: x.getAttribute("data-type"), src: x.getAttribute("data-src"),
+          var im = x.querySelector(".media img");
+          return { type: x.getAttribute("data-type"),
+                   src: im ? im.getAttribute("src") : x.getAttribute("data-src"),
                    poster: x.getAttribute("data-poster") || "", cap: x.getAttribute("data-cap") || "" };
         });
         lbOpen(els.indexOf(el));
