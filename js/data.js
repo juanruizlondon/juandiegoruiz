@@ -244,9 +244,9 @@ window.PROJECTS = [
       { file: "mockups.jpg", caption: { en: "Mockups", de: "Mockups" } }
     ],
     video: null, // spot 15–20 s
-    note: {
-      en: "Independent, self-initiated campaign. Not commissioned or endorsed by adidas. Imagery created with AI-assisted tools; concept, art direction and design by me.",
-      de: "Unabhängiges, eigenes Kampagnenkonzept. Nicht von adidas beauftragt oder unterstützt. Bildmaterial mit KI-Unterstützung erstellt; Konzept, Art Direction und Design von mir."
+        note: {
+      en: "Independent Concept Project. A self-initiated exploration of specialty coffee branding, packaging and visual communication. AI-assisted imagery was used for visualisation and mockup development.",
+      de: "Unabhängiges Konzeptprojekt. Eine eigeninitiierte Auseinandersetzung mit Branding, Verpackung und visueller Kommunikation im Bereich Specialty Coffee. Für Visualisierung und Mockup-Entwicklung wurden KI-gestützte Bilder eingesetzt."
     }
   },
   {
