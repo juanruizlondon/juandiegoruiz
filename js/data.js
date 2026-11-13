@@ -237,11 +237,17 @@ window.PROJECTS = [
       }
     ],
     gallery: [
-      { file: "moodboard.jpg", caption: { en: "Moodboard", de: "Moodboard" } },
-      { file: "key-visual.jpg", caption: { en: "Key visual", de: "Key Visual" } },
-      { file: "instagram.jpg", caption: { en: "Instagram", de: "Instagram" } },
-      { file: "stories.jpg", caption: { en: "Stories", de: "Stories" } },
-      { file: "mockups.jpg", caption: { en: "Mockups", de: "Mockups" } }
+      { file: "cover.png", caption: { en: "Cover", de: "Cover" } },
+      { file: "cover2.png", caption: { en: "Cover – variation", de: "Cover – Variante" } },
+      { file: "cover3.png", caption: { en: "Another cover variation", de: "Eine weitere Cover-Variante" } },
+      { file: "moodboard.png", caption: { en: "Moodboard", de: "Moodboard" } },
+      { file: "moodboard2.png", caption: { en: "More from the moodboard", de: "Mehr vom Moodboard" } },
+      { file: "visual-direction.png", caption: { en: "Visual direction", de: "Visuelle Richtung" } },
+      { file: "styles.png", caption: { en: "Styles", de: "Stile" } },
+      { file: "socialmediaposts.png", caption: { en: "Social media posts", de: "Social-Media-Posts" } },
+      { file: "socialmockupboard.png", caption: { en: "Social media mockups", de: "Social-Media-Mockups" } },
+      { file: "stories.png", caption: { en: "Stories", de: "Stories" } },
+      { video: "video.mp4", caption: { en: "Video", de: "Video" } }
     ],
     video: null, // spot 15–20 s
            note: {
