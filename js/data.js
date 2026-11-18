@@ -292,7 +292,7 @@ window.PROJECTS = [
       { file: "key-visual.jpg", caption: { en: "Key visual", de: "Key Visual" } },
       { file: "poster-aisha-brown.jpg", caption: { en: "Poster, Aisha Brown", de: "Plakat, Aisha Brown" } },
       { file: "poster-miguel-campos.jpg", caption: { en: "Poster, Miguel Campos", de: "Plakat, Miguel Campos" } },
-      { file: "poster-jordan-reid.jpg", caption: { en: "Poster, Jordan Reid", de: "Plakat, Jordan Reid" } },
+      { file: "poster-selin-yildiz.jpg", caption: { en: "Poster, Selin Yildiz", de: "Plakat, Selin Yildiz" } },
       { file: "programme.jpg", caption: { en: "Programme", de: "Programm" } },
       { file: "city.jpg", caption: { en: "City posters", de: "Plakate im Stadtraum" } }
     ],
