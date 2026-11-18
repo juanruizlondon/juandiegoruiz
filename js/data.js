@@ -242,7 +242,6 @@ window.PROJECTS = [
       { file: "cover3.png", caption: { en: "Another cover variation", de: "Eine weitere Cover-Variante" } },
       { file: "moodboard.png", caption: { en: "Moodboard", de: "Moodboard" } },
       { file: "moodboard2.png", caption: { en: "More from the moodboard", de: "Mehr vom Moodboard" } },
-      { file: "visual-direction.png", caption: { en: "Visual direction", de: "Visuelle Richtung" } },
       { file: "styles.png", caption: { en: "Styles", de: "Stile" } },
       { file: "socialmediaposts.png", caption: { en: "Social media posts", de: "Social-Media-Posts" } },
       { file: "socialmockupboard.png", caption: { en: "Social media mockups", de: "Social-Media-Mockups" } },
